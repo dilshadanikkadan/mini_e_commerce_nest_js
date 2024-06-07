@@ -7,6 +7,7 @@ import { AuthModule } from './auth/auth.module';
 import { SharedModule } from './shared/shared.module';
 import { HelperModule } from './helper/helper.module';
 import { MongooseModule } from '@nestjs/mongoose';
+import { ProductModule } from './product/product.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     AuthModule,
     SharedModule,
     HelperModule,
+    ProductModule,
   ],
   controllers: [AppController, AuthController],
   providers: [AppService, AuthService],
