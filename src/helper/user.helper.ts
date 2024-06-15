@@ -9,7 +9,7 @@ import { Model } from 'mongoose';
 import { LoginDTO, RegisterDTO } from 'src/auth/auth.dto';
 import { IUser } from 'src/models/user.schema';
 import * as bcrypt from 'bcrypt';
-//
+
 @Injectable()
 export class UserHelper {
   constructor(@InjectModel('User') private userModel: Model<IUser>) {}
